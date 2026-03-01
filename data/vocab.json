@@ -256,6 +256,108 @@
         "rom": "YAK",
         "en": "medicine",
         "category": "thing"
+      },
+      {
+        "kr": "친구",
+        "rom": "CHIN-GU",
+        "en": "friend",
+        "category": "general"
+      },
+      {
+        "kr": "차",
+        "rom": "CHA",
+        "en": "tea",
+        "category": "general"
+      },
+      {
+        "kr": "공원",
+        "rom": "GONG-WON",
+        "en": "park",
+        "category": "general"
+      },
+      {
+        "kr": "가방",
+        "rom": "GA-BANG",
+        "en": "bag",
+        "category": "general"
+      },
+      {
+        "kr": "고기",
+        "rom": "GO-GI",
+        "en": "meat",
+        "category": "general"
+      },
+      {
+        "kr": "병원",
+        "rom": "BYONG-WON",
+        "en": "hospital",
+        "category": "general"
+      },
+      {
+        "kr": "아이",
+        "rom": "A-I",
+        "en": "child/kid",
+        "category": "general"
+      },
+      {
+        "kr": "선생님",
+        "rom": "SON-SAENG-NIM",
+        "en": "teacher",
+        "category": "general"
+      },
+      {
+        "kr": "우유",
+        "rom": "U-YU",
+        "en": "milk",
+        "category": "general"
+      },
+      {
+        "kr": "피자",
+        "rom": "PI-JA",
+        "en": "pizza",
+        "category": "general"
+      },
+      {
+        "kr": "엄마",
+        "rom": "OM-MA",
+        "en": "mom/mother",
+        "category": "general"
+      },
+      {
+        "kr": "팝콘",
+        "rom": "PAP-KON",
+        "en": "popcorn",
+        "category": "general"
+      },
+      {
+        "kr": "초콜릿",
+        "rom": "CHO-KOL-LIT",
+        "en": "chocolate",
+        "category": "general"
+      },
+      {
+        "kr": "쭈꾸미",
+        "rom": "JJU-KKU-MI",
+        "en": "spicy baby octopus",
+        "category": "general"
+      },
+      {
+        "kr": "저녁",
+        "rom": "JO-NYOK",
+        "en": "evening/dinner",
+        "category": "general"
+      },
+      {
+        "kr": "아침",
+        "rom": "A-CHIM",
+        "en": "morning/breakfast",
+        "category": "general"
+      },
+      {
+        "kr": "봄",
+        "rom": "BOM",
+        "en": "spring (season)",
+        "category": "general"
       }
     ],
     "verbs": [
@@ -292,7 +394,9 @@
       {
         "id": "meokda",
         "en": "eat",
-        "objectTypes": ["food"],
+        "objectTypes": [
+          "food"
+        ],
         "placeParticle": "eseo",
         "present": "먹어요",
         "presentRom": "MEO-GEO-YO",
@@ -307,7 +411,9 @@
       {
         "id": "masida",
         "en": "drink",
-        "objectTypes": ["drink"],
+        "objectTypes": [
+          "drink"
+        ],
         "placeParticle": "eseo",
         "present": "마셔요",
         "presentRom": "MA-SYEO-YO",
@@ -322,7 +428,9 @@
       {
         "id": "boda",
         "en": "see / watch",
-        "objectTypes": ["thing"],
+        "objectTypes": [
+          "thing"
+        ],
         "placeParticle": "eseo",
         "present": "봐요",
         "presentRom": "BWA-YO",
@@ -337,7 +445,11 @@
       {
         "id": "sada",
         "en": "buy",
-        "objectTypes": ["food", "drink", "thing"],
+        "objectTypes": [
+          "food",
+          "drink",
+          "thing"
+        ],
         "placeParticle": "eseo",
         "present": "사요",
         "presentRom": "SA-YO",
@@ -367,7 +479,9 @@
       {
         "id": "deutda",
         "en": "listen",
-        "objectTypes": ["thing"],
+        "objectTypes": [
+          "thing"
+        ],
         "placeParticle": "eseo",
         "present": "들어요",
         "presentRom": "DEU-REO-YO",
@@ -397,7 +511,9 @@
       {
         "id": "ilkda",
         "en": "read",
-        "objectTypes": ["thing"],
+        "objectTypes": [
+          "thing"
+        ],
         "placeParticle": "eseo",
         "present": "읽어요",
         "presentRom": "IL-GEO-YO",
@@ -412,7 +528,9 @@
       {
         "id": "sseuda",
         "en": "write",
-        "objectTypes": ["thing"],
+        "objectTypes": [
+          "thing"
+        ],
         "placeParticle": "eseo",
         "present": "써요",
         "presentRom": "SSEO-YO",
@@ -427,7 +545,10 @@
       {
         "id": "juda",
         "en": "give",
-        "objectTypes": ["thing", "food"],
+        "objectTypes": [
+          "thing",
+          "food"
+        ],
         "placeParticle": "eseo",
         "present": "줘요",
         "presentRom": "JWEO-YO",
@@ -442,7 +563,9 @@
       {
         "id": "batda",
         "en": "receive",
-        "objectTypes": ["thing"],
+        "objectTypes": [
+          "thing"
+        ],
         "placeParticle": "eseo",
         "present": "받아요",
         "presentRom": "BAD-A-YO",
@@ -457,7 +580,9 @@
       {
         "id": "chatda",
         "en": "look for / find",
-        "objectTypes": ["thing"],
+        "objectTypes": [
+          "thing"
+        ],
         "placeParticle": "eseo",
         "present": "찾아요",
         "presentRom": "CHA-JA-YO",
@@ -483,6 +608,140 @@
         "future": "기다릴 거예요",
         "futureRom": "GI-DA-RIL GGEO-YE-YO",
         "futureEn": "will wait"
+      },
+      {
+        "id": "jada",
+        "en": "sleep",
+        "objectTypes": [],
+        "placeParticle": "eseo",
+        "past": "잤어요",
+        "pastRom": "JA-SSEO-YO",
+        "pastEn": "slept",
+        "present": "자요",
+        "presentRom": "JA-YO",
+        "presentEn": "sleep",
+        "future": "잘 거예요",
+        "futureRom": "JAL GGEO-YE-YO",
+        "futureEn": "will sleep"
+      },
+      {
+        "id": "joahada",
+        "en": "like",
+        "objectTypes": [
+          "food",
+          "drink",
+          "thing",
+          "person"
+        ],
+        "placeParticle": "eseo",
+        "past": "좋아했어요",
+        "pastRom": "JO-A-HAE-SSEO-YO",
+        "pastEn": "liked",
+        "present": "좋아해요",
+        "presentRom": "JO-A-HAE-YO",
+        "presentEn": "like",
+        "future": "좋아할 거예요",
+        "futureRom": "JO-A-HAL GGEO-YE-YO",
+        "futureEn": "will like"
+      },
+      {
+        "id": "sada",
+        "en": "buy",
+        "objectTypes": [
+          "food",
+          "drink"
+        ],
+        "placeParticle": "eseo",
+        "past": "샀어요",
+        "pastRom": "SA-SSEO-YO",
+        "pastEn": "bought",
+        "present": "사요",
+        "presentRom": "SA-YO",
+        "presentEn": "buy",
+        "future": "살 거예요",
+        "futureRom": "SAL GGEO-YE-YO",
+        "futureEn": "will buy"
+      },
+      {
+        "id": "ilkda",
+        "en": "read",
+        "objectTypes": [
+          "thing"
+        ],
+        "placeParticle": "eseo",
+        "past": "읽었어요",
+        "pastRom": "IL-GEO-SSEO-YO",
+        "pastEn": "read",
+        "present": "읽어요",
+        "presentRom": "IL-GEO-YO",
+        "presentEn": "read",
+        "future": "읽을 거예요",
+        "futureRom": "IL-GEUL GGEO-YE-YO",
+        "futureEn": "will read"
+      },
+      {
+        "id": "gada",
+        "en": "go",
+        "objectTypes": [],
+        "placeParticle": "e",
+        "past": "갔어요",
+        "pastRom": "GA-SSEO-YO",
+        "pastEn": "went",
+        "present": "가요",
+        "presentRom": "GA-YO",
+        "presentEn": "go",
+        "future": "갈 거예요",
+        "futureRom": "GAL GGEO-YE-YO",
+        "futureEn": "will go"
+      },
+      {
+        "id": "oda",
+        "en": "come",
+        "objectTypes": [],
+        "placeParticle": "e",
+        "past": "왔어요",
+        "pastRom": "WA-SSEO-YO",
+        "pastEn": "came",
+        "present": "와요",
+        "presentRom": "WA-YO",
+        "presentEn": "come",
+        "future": "올 거예요",
+        "futureRom": "OL GGEO-YE-YO",
+        "futureEn": "will come"
+      },
+      {
+        "id": "meokda",
+        "en": "eat",
+        "objectTypes": [
+          "food"
+        ],
+        "placeParticle": "eseo",
+        "past": "먹었어요",
+        "pastRom": "MEO-GEO-SSEO-YO",
+        "pastEn": "ate",
+        "present": "먹어요",
+        "presentRom": "MEO-GEO-YO",
+        "presentEn": "eat",
+        "future": "먹을 거예요",
+        "futureRom": "MEO-GEUL GGEO-YE-YO",
+        "futureEn": "will eat"
+      },
+      {
+        "id": "masida",
+        "en": "drink",
+        "objectTypes": [
+          "drink"
+        ],
+        "placeParticle": "eseo",
+        "past": "마셨어요",
+        "pastRom": "MA-SYEO-SSEO-YO",
+        "pastEn": "drank",
+        "present": "마셔요",
+        "presentRom": "MA-SYEO-YO",
+        "presentEn": "drink",
+        "future": "마실 거예요",
+        "futureRom": "MA-SIL GGEO-YE-YO",
+        "futureEn": "will drink"
       }
     ]
   },
@@ -553,6 +812,102 @@
         "rom": "JEON-HWA",
         "en": "Phone",
         "category": "thing"
+      },
+      {
+        "kr": "친구",
+        "rom": "CHIN-GU",
+        "en": "Friend",
+        "category": "general"
+      },
+      {
+        "kr": "차",
+        "rom": "CHA",
+        "en": "Tea",
+        "category": "general"
+      },
+      {
+        "kr": "공원",
+        "rom": "GONG-WON",
+        "en": "Park",
+        "category": "general"
+      },
+      {
+        "kr": "고기",
+        "rom": "GO-GI",
+        "en": "Meat",
+        "category": "general"
+      },
+      {
+        "kr": "병원",
+        "rom": "BYONG-WON",
+        "en": "Hospital",
+        "category": "general"
+      },
+      {
+        "kr": "아이",
+        "rom": "A-I",
+        "en": "Child/kid",
+        "category": "general"
+      },
+      {
+        "kr": "선생님",
+        "rom": "SON-SAENG-NIM",
+        "en": "Teacher",
+        "category": "general"
+      },
+      {
+        "kr": "우유",
+        "rom": "U-YU",
+        "en": "Milk",
+        "category": "general"
+      },
+      {
+        "kr": "피자",
+        "rom": "PI-JA",
+        "en": "Pizza",
+        "category": "general"
+      },
+      {
+        "kr": "엄마",
+        "rom": "OM-MA",
+        "en": "Mom/mother",
+        "category": "general"
+      },
+      {
+        "kr": "팝콘",
+        "rom": "PAP-KON",
+        "en": "Popcorn",
+        "category": "general"
+      },
+      {
+        "kr": "초콜릿",
+        "rom": "CHO-KOL-LIT",
+        "en": "Chocolate",
+        "category": "general"
+      },
+      {
+        "kr": "쭈꾸미",
+        "rom": "JJU-KKU-MI",
+        "en": "Spicy baby octopus",
+        "category": "general"
+      },
+      {
+        "kr": "저녁",
+        "rom": "JO-NYOK",
+        "en": "Evening/dinner",
+        "category": "general"
+      },
+      {
+        "kr": "아침",
+        "rom": "A-CHIM",
+        "en": "Morning/breakfast",
+        "category": "general"
+      },
+      {
+        "kr": "봄",
+        "rom": "BOM",
+        "en": "Spring (season)",
+        "category": "general"
       }
     ],
     "adjectives": [
@@ -561,63 +916,140 @@
         "kr": "맛있어요",
         "rom": "MA-SI-SSEO-YO",
         "en": "delicious",
-        "compatibleSubjects": ["food", "drink"]
+        "compatibleSubjects": [
+          "food",
+          "drink"
+        ]
       },
       {
         "id": "good",
         "kr": "좋아요",
         "rom": "JO-A-YO",
         "en": "good",
-        "compatibleSubjects": ["food", "drink", "activity", "thing"]
+        "compatibleSubjects": [
+          "food",
+          "drink",
+          "activity",
+          "thing"
+        ]
       },
       {
         "id": "big",
         "kr": "커요",
         "rom": "KEO-YO",
         "en": "big",
-        "compatibleSubjects": ["thing", "food"]
+        "compatibleSubjects": [
+          "thing",
+          "food"
+        ]
       },
       {
         "id": "small",
         "kr": "작아요",
         "rom": "JAG-A-YO",
         "en": "small",
-        "compatibleSubjects": ["thing"]
+        "compatibleSubjects": [
+          "thing"
+        ]
       },
       {
         "id": "many",
         "kr": "많아요",
         "rom": "MAN-A-YO",
         "en": "a lot / many",
-        "compatibleSubjects": ["food", "drink", "thing"]
+        "compatibleSubjects": [
+          "food",
+          "drink",
+          "thing"
+        ]
       },
       {
         "id": "pretty",
         "kr": "예뻐요",
         "rom": "YE-PPEO-YO",
         "en": "pretty",
-        "compatibleSubjects": ["thing"]
+        "compatibleSubjects": [
+          "thing"
+        ]
       },
       {
         "id": "expensive",
         "kr": "비싸요",
         "rom": "BI-SSA-YO",
         "en": "expensive",
-        "compatibleSubjects": ["food", "drink", "thing"]
+        "compatibleSubjects": [
+          "food",
+          "drink",
+          "thing"
+        ]
       },
       {
         "id": "hard",
         "kr": "힘들어요",
         "rom": "HIM-DEU-REO-YO",
         "en": "hard / tiring",
-        "compatibleSubjects": ["activity"]
+        "compatibleSubjects": [
+          "activity"
+        ]
       },
       {
         "id": "fun",
         "kr": "재밌어요",
         "rom": "JAE-MI-SSEO-YO",
         "en": "fun",
-        "compatibleSubjects": ["activity"]
+        "compatibleSubjects": [
+          "activity"
+        ]
+      },
+      {
+        "id": "to_be_big",
+        "kr": "크다",
+        "rom": "KU-DA",
+        "en": "to be big",
+        "compatibleSubjects": [
+          "food",
+          "drink"
+        ]
+      },
+      {
+        "id": "to_be_small",
+        "kr": "작다",
+        "rom": "JAK-DA",
+        "en": "to be small",
+        "compatibleSubjects": [
+          "food",
+          "drink"
+        ]
+      },
+      {
+        "id": "to_be_delicious",
+        "kr": "맛있다",
+        "rom": "MA-SIT-DA",
+        "en": "to be delicious",
+        "compatibleSubjects": [
+          "food",
+          "drink"
+        ]
+      },
+      {
+        "id": "to_be_hot",
+        "kr": "뜨겁다",
+        "rom": "TTU-GOP-DA",
+        "en": "to be hot",
+        "compatibleSubjects": [
+          "food",
+          "drink"
+        ]
+      },
+      {
+        "id": "to_be_good_nice",
+        "kr": "좋다",
+        "rom": "JO-TA",
+        "en": "to be good/nice",
+        "compatibleSubjects": [
+          "food",
+          "drink"
+        ]
       }
     ],
     "adverbs": [
@@ -1067,6 +1499,41 @@
             "kr": "한국어 공부해요",
             "rom": "HAN-GUG-EO GONG-BU-HAE-YO",
             "en": "I study Korean"
+          }
+        ]
+      },
+      {
+        "name": "Expressions",
+        "cards": [
+          {
+            "kr": "같이",
+            "rom": "GA-CHI",
+            "en": "together"
+          },
+          {
+            "kr": "같이 가요",
+            "rom": "GA-CHI GA-YO",
+            "en": "Let's go together"
+          },
+          {
+            "kr": "매일",
+            "rom": "MAE-IL",
+            "en": "every day"
+          },
+          {
+            "kr": "저는",
+            "rom": "JO-NUN",
+            "en": "I (topic marker)"
+          },
+          {
+            "kr": "저는 ~ 좋아해요",
+            "rom": "JO-NUN ~ JO-A-HAE-YO",
+            "en": "I like ~"
+          },
+          {
+            "kr": "뜨거운 우유를 마셔요",
+            "rom": "TTU-GO-UN U-YU-RUL MA-SHO-YO",
+            "en": "I drink hot milk"
           }
         ]
       }
