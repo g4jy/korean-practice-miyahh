@@ -242,6 +242,12 @@
         if (currentCards.length === 0) return;
         const card = currentCards[currentIdx];
         App.trackResponse(card.kr, card.en, status, card.category, 'flashcard');
+        // Sync to SRS mastery so Learn/Quiz see Browse progress
+        const srsBox = status === 'know' ? 3 : status === 'unsure' ? 1 : 0;
+        if (!M[card.kr] || M[card.kr].b < srsBox) {
+          M[card.kr] = { ...(M[card.kr] || {}), b: srsBox, t: Date.now() };
+          Storage.saveMastery(M);
+        }
         if (status === 'dont_know') {
           const reinsertIdx = Math.min(currentIdx + 6, currentCards.length);
           currentCards.splice(reinsertIdx, 0, { ...card });
@@ -547,8 +553,10 @@
     document.getElementById('quiz-sc').textContent = RSC;
     document.getElementById('quiz-tot').textContent = RI;
 
-    // Build 4 options
-    const pool = allCards.filter(x => x.kr !== w.kr);
+    // Build 4 options — prefer same-category distractors, fallback to all
+    const catPool = getQuizPool().filter(x => x.kr !== w.kr && x.en !== w.en);
+    const fallbackPool = allCards.filter(x => x.kr !== w.kr && x.en !== w.en);
+    let pool = catPool.length >= 3 ? [...catPool] : [...fallbackPool];
     const opts = [w];
     while (opts.length < 4 && pool.length) {
       const r = Math.random() * pool.length | 0;
@@ -706,6 +714,11 @@
     form.reset();
     App.showToast('Added: ' + word.kr);
     renderUserWordsList();
+    // Rebuild category pills so new categories appear
+    buildCatPills('learn-cat-pills', cat => { learnCat = cat; renderLearnHome(); });
+    buildCatPills('quiz-cat-pills', cat => { quizCat = cat; renderQuizHome(); });
+    renderLearnHome();
+    renderQuizHome();
   });
 
   async function renderUserWordsList() {

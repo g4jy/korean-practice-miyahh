@@ -301,7 +301,7 @@
       },
       {
         "kr": "선생님",
-        "rom": "SON-SAENG-NIM",
+        "rom": "SEON-SAENG-NIM",
         "en": "teacher",
         "category": "general"
       },
@@ -319,7 +319,7 @@
       },
       {
         "kr": "엄마",
-        "rom": "OM-MA",
+        "rom": "EOM-MA",
         "en": "mom/mother",
         "category": "general"
       },
@@ -343,7 +343,7 @@
       },
       {
         "kr": "저녁",
-        "rom": "JO-NYOK",
+        "rom": "JEO-NYEOK",
         "en": "evening/dinner",
         "category": "general"
       },
@@ -380,13 +380,13 @@
         "id": "oda",
         "en": "come",
         "objectTypes": [],
-        "placeParticle": "eseo",
-        "present": "와요",
-        "presentRom": "WA-YO",
-        "presentEn": "come",
+        "placeParticle": "e",
         "past": "왔어요",
         "pastRom": "WA-SSEO-YO",
         "pastEn": "came",
+        "present": "와요",
+        "presentRom": "WA-YO",
+        "presentEn": "come",
         "future": "올 거예요",
         "futureRom": "OL GGEO-YE-YO",
         "futureEn": "will come"
@@ -643,105 +643,6 @@
         "future": "좋아할 거예요",
         "futureRom": "JO-A-HAL GGEO-YE-YO",
         "futureEn": "will like"
-      },
-      {
-        "id": "sada",
-        "en": "buy",
-        "objectTypes": [
-          "food",
-          "drink"
-        ],
-        "placeParticle": "eseo",
-        "past": "샀어요",
-        "pastRom": "SA-SSEO-YO",
-        "pastEn": "bought",
-        "present": "사요",
-        "presentRom": "SA-YO",
-        "presentEn": "buy",
-        "future": "살 거예요",
-        "futureRom": "SAL GGEO-YE-YO",
-        "futureEn": "will buy"
-      },
-      {
-        "id": "ilkda",
-        "en": "read",
-        "objectTypes": [
-          "thing"
-        ],
-        "placeParticle": "eseo",
-        "past": "읽었어요",
-        "pastRom": "IL-GEO-SSEO-YO",
-        "pastEn": "read",
-        "present": "읽어요",
-        "presentRom": "IL-GEO-YO",
-        "presentEn": "read",
-        "future": "읽을 거예요",
-        "futureRom": "IL-GEUL GGEO-YE-YO",
-        "futureEn": "will read"
-      },
-      {
-        "id": "gada",
-        "en": "go",
-        "objectTypes": [],
-        "placeParticle": "e",
-        "past": "갔어요",
-        "pastRom": "GA-SSEO-YO",
-        "pastEn": "went",
-        "present": "가요",
-        "presentRom": "GA-YO",
-        "presentEn": "go",
-        "future": "갈 거예요",
-        "futureRom": "GAL GGEO-YE-YO",
-        "futureEn": "will go"
-      },
-      {
-        "id": "oda",
-        "en": "come",
-        "objectTypes": [],
-        "placeParticle": "e",
-        "past": "왔어요",
-        "pastRom": "WA-SSEO-YO",
-        "pastEn": "came",
-        "present": "와요",
-        "presentRom": "WA-YO",
-        "presentEn": "come",
-        "future": "올 거예요",
-        "futureRom": "OL GGEO-YE-YO",
-        "futureEn": "will come"
-      },
-      {
-        "id": "meokda",
-        "en": "eat",
-        "objectTypes": [
-          "food"
-        ],
-        "placeParticle": "eseo",
-        "past": "먹었어요",
-        "pastRom": "MEO-GEO-SSEO-YO",
-        "pastEn": "ate",
-        "present": "먹어요",
-        "presentRom": "MEO-GEO-YO",
-        "presentEn": "eat",
-        "future": "먹을 거예요",
-        "futureRom": "MEO-GEUL GGEO-YE-YO",
-        "futureEn": "will eat"
-      },
-      {
-        "id": "masida",
-        "en": "drink",
-        "objectTypes": [
-          "drink"
-        ],
-        "placeParticle": "eseo",
-        "past": "마셨어요",
-        "pastRom": "MA-SYEO-SSEO-YO",
-        "pastEn": "drank",
-        "present": "마셔요",
-        "presentRom": "MA-SYEO-YO",
-        "presentEn": "drink",
-        "future": "마실 거예요",
-        "futureRom": "MA-SIL GGEO-YE-YO",
-        "futureEn": "will drink"
       }
     ]
   },
@@ -851,7 +752,7 @@
       },
       {
         "kr": "선생님",
-        "rom": "SON-SAENG-NIM",
+        "rom": "SEON-SAENG-NIM",
         "en": "Teacher",
         "category": "general"
       },
@@ -869,7 +770,7 @@
       },
       {
         "kr": "엄마",
-        "rom": "OM-MA",
+        "rom": "EOM-MA",
         "en": "Mom/mother",
         "category": "general"
       },
@@ -893,7 +794,7 @@
       },
       {
         "kr": "저녁",
-        "rom": "JO-NYOK",
+        "rom": "JEO-NYEOK",
         "en": "Evening/dinner",
         "category": "general"
       },
