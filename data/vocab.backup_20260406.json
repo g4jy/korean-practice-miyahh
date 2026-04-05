@@ -1076,29 +1076,14 @@
         "name": "Greetings & Survival",
         "cards": [
           {
-            "kr": "감사합니다",
-            "rom": "GAM-SA-HAM-NI-DA",
-            "en": "Thank you"
-          },
-          {
-            "kr": "맞습니다",
-            "rom": "MAT-SEUM-NI-DA",
-            "en": "that is correct (formal)"
-          },
-          {
-            "kr": "맞아요",
-            "rom": "MAJ-A-YO",
-            "en": "that is right / correct"
-          },
-          {
-            "kr": "물 주세요",
-            "rom": "MUL JU-SE-YO",
-            "en": "Water please"
-          },
-          {
             "kr": "안녕하세요",
             "rom": "AN-NYEONG-HA-SE-YO",
             "en": "Hello"
+          },
+          {
+            "kr": "감사합니다",
+            "rom": "GAM-SA-HAM-NI-DA",
+            "en": "Thank you"
           },
           {
             "kr": "얼마예요?",
@@ -1106,19 +1091,9 @@
             "en": "How much is it?"
           },
           {
-            "kr": "이거 주세요",
-            "rom": "I-GEO JU-SE-YO",
-            "en": "This one please"
-          },
-          {
-            "kr": "잘 지냈어요",
-            "rom": "JAL JI-NAESS-EO-YO",
-            "en": "have you been well?"
-          },
-          {
-            "kr": "잠시만요",
-            "rom": "JAM-SI-MAN-YO",
-            "en": "just a moment"
+            "kr": "물 주세요",
+            "rom": "MUL JU-SE-YO",
+            "en": "Water please"
           },
           {
             "kr": "주문할게요",
@@ -1126,14 +1101,9 @@
             "en": "I will order"
           },
           {
-            "kr": "주세요",
-            "rom": "JU-SE-YO",
-            "en": "please give / please do"
-          },
-          {
-            "kr": "한국어로 해주세요",
-            "rom": "HAN-GU-GEO-RO HAE-JU-SE-YO",
-            "en": "please say it in Korean"
+            "kr": "이거 주세요",
+            "rom": "I-GEO JU-SE-YO",
+            "en": "This one please"
           }
         ]
       },
@@ -1141,24 +1111,14 @@
         "name": "People",
         "cards": [
           {
-            "kr": "당신",
-            "rom": "DANG-SIN",
-            "en": "you"
-          },
-          {
             "kr": "사람",
             "rom": "SA-RAM",
             "en": "person"
           },
           {
-            "kr": "선생님",
-            "rom": "SEON-SAENG-NIM",
-            "en": "teacher"
-          },
-          {
-            "kr": "아빠",
-            "rom": "A-PPA",
-            "en": "dad"
+            "kr": "친구",
+            "rom": "CHIN-GU",
+            "en": "friend"
           },
           {
             "kr": "엄마",
@@ -1166,19 +1126,14 @@
             "en": "mom"
           },
           {
-            "kr": "여자",
-            "rom": "YEO-JA",
-            "en": "girl/woman"
+            "kr": "아빠",
+            "rom": "A-PPA",
+            "en": "dad"
           },
           {
-            "kr": "저",
-            "rom": "JEO",
-            "en": "I (humble)"
-          },
-          {
-            "kr": "친구",
-            "rom": "CHIN-GU",
-            "en": "friend"
+            "kr": "선생님",
+            "rom": "SEON-SAENG-NIM",
+            "en": "teacher"
           },
           {
             "kr": "학생",
@@ -1191,44 +1146,9 @@
         "name": "Places",
         "cards": [
           {
-            "kr": "가게",
-            "rom": "GA-GE",
-            "en": "store"
-          },
-          {
-            "kr": "공원",
-            "rom": "GONG-WON",
-            "en": "park"
-          },
-          {
-            "kr": "도서관",
-            "rom": "DO-SEO-GWAN",
-            "en": "library"
-          },
-          {
-            "kr": "레스토랑",
-            "rom": "RE-SEU-TO-RANG",
-            "en": "restaurant"
-          },
-          {
-            "kr": "마트",
-            "rom": "MA-TEU",
-            "en": "supermarket/mart"
-          },
-          {
-            "kr": "미국",
-            "rom": "MI-GUK",
-            "en": "America / USA"
-          },
-          {
-            "kr": "버스",
-            "rom": "BEO-SEU",
-            "en": "bus"
-          },
-          {
-            "kr": "버스 정류장",
-            "rom": "BEO-SEU JEONG-RYU-JANG",
-            "en": "bus stop"
+            "kr": "학교",
+            "rom": "HAK-GYO",
+            "en": "school"
           },
           {
             "kr": "병원",
@@ -1236,19 +1156,9 @@
             "en": "hospital"
           },
           {
-            "kr": "쇼핑몰",
-            "rom": "SYO-PING-MOL",
-            "en": "shopping mall"
-          },
-          {
-            "kr": "슈퍼마켓",
-            "rom": "SYU-PEO-MA-KET",
-            "en": "supermarket"
-          },
-          {
-            "kr": "시장",
-            "rom": "SI-JANG",
-            "en": "market"
+            "kr": "공원",
+            "rom": "GONG-WON",
+            "en": "park"
           },
           {
             "kr": "식당",
@@ -1256,29 +1166,9 @@
             "en": "restaurant"
           },
           {
-            "kr": "약국",
-            "rom": "YAK-GUK",
-            "en": "pharmacy"
-          },
-          {
-            "kr": "은행",
-            "rom": "EUN-HAENG",
-            "en": "bank"
-          },
-          {
-            "kr": "정류장",
-            "rom": "JEONG-RYU-JANG",
-            "en": "bus stop"
-          },
-          {
-            "kr": "지하철",
-            "rom": "JI-HA-CHEOL",
-            "en": "subway"
-          },
-          {
-            "kr": "지하철역",
-            "rom": "JI-HA-CHEOL-YEOK",
-            "en": "subway station"
+            "kr": "도서관",
+            "rom": "DO-SEO-GWAN",
+            "en": "library"
           },
           {
             "kr": "체육관",
@@ -1286,9 +1176,9 @@
             "en": "gym (school)"
           },
           {
-            "kr": "출구",
-            "rom": "CHUL-GU",
-            "en": "exit"
+            "kr": "지하철역",
+            "rom": "JI-HA-CHEOL-YEOK",
+            "en": "subway station"
           },
           {
             "kr": "카페",
@@ -1296,19 +1186,14 @@
             "en": "cafe"
           },
           {
-            "kr": "편의점",
-            "rom": "PYEON-UI-JEOM",
-            "en": "convenience store"
+            "kr": "가게",
+            "rom": "GA-GE",
+            "en": "store"
           },
           {
-            "kr": "학교",
-            "rom": "HAK-GYO",
-            "en": "school"
-          },
-          {
-            "kr": "학원",
-            "rom": "HAK-WON",
-            "en": "academy (after-school institution)"
+            "kr": "회사",
+            "rom": "HOE-SA",
+            "en": "company / office"
           },
           {
             "kr": "헬스장",
@@ -1316,19 +1201,19 @@
             "en": "gym"
           },
           {
-            "kr": "호텔",
-            "rom": "HO-TEL",
-            "en": "hotel"
+            "kr": "시장",
+            "rom": "SI-JANG",
+            "en": "market"
           },
           {
-            "kr": "화장실",
-            "rom": "HWA-JANG-SIL",
-            "en": "bathroom/restroom"
+            "kr": "약국",
+            "rom": "YAK-GUK",
+            "en": "pharmacy"
           },
           {
-            "kr": "회사",
-            "rom": "HOE-SA",
-            "en": "company / office"
+            "kr": "버스 정류장",
+            "rom": "BEO-SEU JEONG-RYU-JANG",
+            "en": "bus stop"
           }
         ]
       },
@@ -1336,39 +1221,9 @@
         "name": "Food & Drink",
         "cards": [
           {
-            "kr": "곱창",
-            "rom": "GOP-CHANG",
-            "en": "beef intestines (dish)"
-          },
-          {
-            "kr": "과일",
-            "rom": "GWA-IL",
-            "en": "fruit"
-          },
-          {
-            "kr": "김밥",
-            "rom": "GIM-BAB",
-            "en": "gimbap (rice roll)"
-          },
-          {
-            "kr": "닭고기",
-            "rom": "DAK-GO-GI",
-            "en": "chicken (meat)"
-          },
-          {
-            "kr": "돼지고기",
-            "rom": "DWAE-JI-GO-GI",
-            "en": "pork"
-          },
-          {
-            "kr": "떡볶이",
-            "rom": "TTEOK-BOK-KI",
-            "en": "tteokbokki (spicy rice cakes)"
-          },
-          {
-            "kr": "면",
-            "rom": "MYEON",
-            "en": "noodles"
+            "kr": "밥",
+            "rom": "BAP",
+            "en": "rice / meal"
           },
           {
             "kr": "물",
@@ -1376,19 +1231,24 @@
             "en": "water"
           },
           {
-            "kr": "바비큐",
-            "rom": "BA-BI-KYU",
-            "en": "barbecue"
+            "kr": "커피",
+            "rom": "KEO-PI",
+            "en": "coffee"
           },
           {
-            "kr": "밥",
-            "rom": "BAP",
-            "en": "rice / meal"
+            "kr": "닭고기",
+            "rom": "DAK-GO-GI",
+            "en": "chicken (meat)"
           },
           {
-            "kr": "비빔밥",
-            "rom": "BI-BIM-BAB",
-            "en": "bibimbap (mixed rice)"
+            "kr": "면",
+            "rom": "MYEON",
+            "en": "noodles"
+          },
+          {
+            "kr": "양념치킨",
+            "rom": "YANG-NYEOM-CHI-KIN",
+            "en": "seasoned fried chicken"
           },
           {
             "kr": "빙수",
@@ -1401,59 +1261,9 @@
             "en": "bread"
           },
           {
-            "kr": "사탕",
-            "rom": "SA-TANG",
-            "en": "candy"
-          },
-          {
-            "kr": "삼각김밥",
-            "rom": "SAM-GAK-GIM-BAP",
-            "en": "triangle kimbap (convenience store rice ball)"
-          },
-          {
-            "kr": "소고기",
-            "rom": "SO-GO-GI",
-            "en": "beef"
-          },
-          {
-            "kr": "양념치킨",
-            "rom": "YANG-NYEOM-CHI-KIN",
-            "en": "seasoned fried chicken"
-          },
-          {
-            "kr": "에너지 드링크",
-            "rom": "E-NEO-JI DEU-RING-KEU",
-            "en": "energy drink"
-          },
-          {
-            "kr": "음식",
-            "rom": "EUM-SIK",
-            "en": "food"
-          },
-          {
-            "kr": "주스",
-            "rom": "JU-SEU",
-            "en": "juice"
-          },
-          {
-            "kr": "쫘꾸미",
-            "rom": "JJU-KKU-MI",
-            "en": "spicy baby octopus"
-          },
-          {
-            "kr": "채소",
-            "rom": "CHAE-SO",
-            "en": "vegetables"
-          },
-          {
-            "kr": "커피",
-            "rom": "KEO-PI",
-            "en": "coffee"
-          },
-          {
-            "kr": "파스타",
-            "rom": "PA-SEU-TA",
-            "en": "pasta"
+            "kr": "과일",
+            "rom": "GWA-IL",
+            "en": "fruit"
           }
         ]
       },
@@ -1461,29 +1271,9 @@
         "name": "Objects",
         "cards": [
           {
-            "kr": "가방",
-            "rom": "GA-BANG",
-            "en": "bag"
-          },
-          {
-            "kr": "고양이",
-            "rom": "GO-YANG-I",
-            "en": "cat"
-          },
-          {
-            "kr": "노래",
-            "rom": "NO-RAE",
-            "en": "song"
-          },
-          {
-            "kr": "달러",
-            "rom": "DAL-LEO",
-            "en": "dollar"
-          },
-          {
-            "kr": "닭",
-            "rom": "DAK",
-            "en": "chicken (animal)"
+            "kr": "책",
+            "rom": "CHAEK",
+            "en": "book"
           },
           {
             "kr": "돈",
@@ -1491,94 +1281,9 @@
             "en": "money"
           },
           {
-            "kr": "돼지",
-            "rom": "DWAE-JI",
-            "en": "pig"
-          },
-          {
-            "kr": "드라마",
-            "rom": "DEU-RA-MA",
-            "en": "drama"
-          },
-          {
-            "kr": "메뉴판",
-            "rom": "ME-NYU-PAN",
-            "en": "menu (board)"
-          },
-          {
-            "kr": "바지",
-            "rom": "BA-JI",
-            "en": "pants"
-          },
-          {
-            "kr": "발음",
-            "rom": "BAR-EUM",
-            "en": "pronunciation"
-          },
-          {
-            "kr": "비자",
-            "rom": "BI-JA",
-            "en": "visa"
-          },
-          {
-            "kr": "선물",
-            "rom": "SEON-MUL",
-            "en": "gift"
-          },
-          {
-            "kr": "소",
-            "rom": "SO",
-            "en": "cow"
-          },
-          {
-            "kr": "손",
-            "rom": "SON",
-            "en": "hand"
-          },
-          {
-            "kr": "수업",
-            "rom": "SU-EOP",
-            "en": "lesson / class"
-          },
-          {
-            "kr": "수학",
-            "rom": "SU-HAK",
-            "en": "mathematics"
-          },
-          {
-            "kr": "신발",
-            "rom": "SIN-BAL",
-            "en": "shoes"
-          },
-          {
-            "kr": "약",
-            "rom": "YAK",
-            "en": "medicine"
-          },
-          {
-            "kr": "영화",
-            "rom": "YEONG-HWA",
-            "en": "movie"
-          },
-          {
-            "kr": "옷",
-            "rom": "OT",
-            "en": "clothes"
-          },
-          {
-            "kr": "이것",
-            "rom": "I-GEOT",
-            "en": "this (thing)"
-          },
-          {
-            "kr": "이름",
-            "rom": "I-REUM",
-            "en": "name"
-          },
-          {
-            "kr": "잔",
-            "rom": "JAN",
-            "en": "cup / glass (counter)"
+            "kr": "가방",
+            "rom": "GA-BANG",
+            "en": "bag"
           },
           {
             "kr": "전화",
@@ -1586,14 +1291,19 @@
             "en": "phone"
           },
           {
-            "kr": "책",
-            "rom": "CHAEK",
-            "en": "book"
+            "kr": "이름",
+            "rom": "I-REUM",
+            "en": "name"
           },
           {
-            "kr": "컵",
-            "rom": "KEOP",
-            "en": "cup"
+            "kr": "옷",
+            "rom": "OT",
+            "en": "clothes"
+          },
+          {
+            "kr": "선물",
+            "rom": "SEON-MUL",
+            "en": "gift"
           },
           {
             "kr": "편지",
@@ -1601,40 +1311,15 @@
             "en": "letter"
           },
           {
-            "kr": "포장",
-            "rom": "PO-JANG",
-            "en": "packaging/wrapping"
+            "kr": "약",
+            "rom": "YAK",
+            "en": "medicine"
           }
         ]
       },
       {
         "name": "Time Words",
         "cards": [
-          {
-            "kr": "날씨",
-            "rom": "NAL-SSI",
-            "en": "weather"
-          },
-          {
-            "kr": "내일",
-            "rom": "NAE-IL",
-            "en": "tomorrow"
-          },
-          {
-            "kr": "밤",
-            "rom": "BAM",
-            "en": "night"
-          },
-          {
-            "kr": "생일",
-            "rom": "SAENG-IL",
-            "en": "birthday"
-          },
-          {
-            "kr": "아침",
-            "rom": "A-CHIM",
-            "en": "morning / breakfast"
-          },
           {
             "kr": "어제",
             "rom": "EO-JE",
@@ -1646,9 +1331,19 @@
             "en": "today"
           },
           {
-            "kr": "저녁",
-            "rom": "JEO-NYEOK",
-            "en": "evening / dinner"
+            "kr": "내일",
+            "rom": "NAE-IL",
+            "en": "tomorrow"
+          },
+          {
+            "kr": "지금",
+            "rom": "JI-GEUM",
+            "en": "now"
+          },
+          {
+            "kr": "아침",
+            "rom": "A-CHIM",
+            "en": "morning / breakfast"
           },
           {
             "kr": "점심",
@@ -1656,14 +1351,9 @@
             "en": "lunch / noon"
           },
           {
-            "kr": "주말",
-            "rom": "JU-MAL",
-            "en": "weekend"
-          },
-          {
-            "kr": "지금",
-            "rom": "JI-GEUM",
-            "en": "now"
+            "kr": "저녁",
+            "rom": "JEO-NYEOK",
+            "en": "evening / dinner"
           }
         ]
       },
@@ -1671,84 +1361,19 @@
         "name": "Adjectives",
         "cards": [
           {
-            "kr": "괜찮다",
-            "rom": "GWAEN-CHAN-DA",
-            "en": "to be okay/fine"
+            "kr": "크다",
+            "rom": "KEU-DA",
+            "en": "big (dictionary)"
           },
           {
-            "kr": "달다",
-            "rom": "DAL-DA",
-            "en": "sweet"
+            "kr": "커요",
+            "rom": "KEO-YO",
+            "en": "is big"
           },
           {
-            "kr": "많다",
-            "rom": "MAN-TA",
-            "en": "many / a lot (dictionary)"
-          },
-          {
-            "kr": "많아요",
-            "rom": "MAN-A-YO",
-            "en": "is a lot"
-          },
-          {
-            "kr": "많은",
-            "rom": "MAN-EUN",
-            "en": "many (before noun)"
-          },
-          {
-            "kr": "맛있는",
-            "rom": "MA-SIN-NEUN",
-            "en": "delicious (before noun)"
-          },
-          {
-            "kr": "맛있다",
-            "rom": "MA-SIT-DA",
-            "en": "delicious (dictionary)"
-          },
-          {
-            "kr": "맛있어요",
-            "rom": "MA-SI-SSEO-YO",
-            "en": "is delicious"
-          },
-          {
-            "kr": "맵다",
-            "rom": "MAEP-DA",
-            "en": "spicy"
-          },
-          {
-            "kr": "비싸다",
-            "rom": "BI-SSA-DA",
-            "en": "expensive (dictionary)"
-          },
-          {
-            "kr": "비싸요",
-            "rom": "BI-SSA-YO",
-            "en": "is expensive"
-          },
-          {
-            "kr": "비싼",
-            "rom": "BI-SSAN",
-            "en": "expensive (before noun)"
-          },
-          {
-            "kr": "어렵다",
-            "rom": "EO-RYEOP-DA",
-            "en": "to be difficult"
-          },
-          {
-            "kr": "예뻐요",
-            "rom": "YE-PPEO-YO",
-            "en": "is pretty"
-          },
-          {
-            "kr": "예쁘다",
-            "rom": "YE-PPEU-DA",
-            "en": "pretty (dictionary)"
-          },
-          {
-            "kr": "예쁜",
-            "rom": "YE-PPEUN",
-            "en": "pretty (before noun)"
+            "kr": "큰",
+            "rom": "KEUN",
+            "en": "big (before noun)"
           },
           {
             "kr": "작다",
@@ -1781,19 +1406,64 @@
             "en": "good (before noun)"
           },
           {
-            "kr": "커요",
-            "rom": "KEO-YO",
-            "en": "is big"
+            "kr": "맛있다",
+            "rom": "MA-SIT-DA",
+            "en": "delicious (dictionary)"
           },
           {
-            "kr": "크다",
-            "rom": "KEU-DA",
-            "en": "big (dictionary)"
+            "kr": "맛있어요",
+            "rom": "MA-SI-SSEO-YO",
+            "en": "is delicious"
           },
           {
-            "kr": "큰",
-            "rom": "KEUN",
-            "en": "big (before noun)"
+            "kr": "맛있는",
+            "rom": "MA-SIN-NEUN",
+            "en": "delicious (before noun)"
+          },
+          {
+            "kr": "예쁘다",
+            "rom": "YE-PPEU-DA",
+            "en": "pretty (dictionary)"
+          },
+          {
+            "kr": "예뻐요",
+            "rom": "YE-PPEO-YO",
+            "en": "is pretty"
+          },
+          {
+            "kr": "예쁜",
+            "rom": "YE-PPEUN",
+            "en": "pretty (before noun)"
+          },
+          {
+            "kr": "비싸다",
+            "rom": "BI-SSA-DA",
+            "en": "expensive (dictionary)"
+          },
+          {
+            "kr": "비싸요",
+            "rom": "BI-SSA-YO",
+            "en": "is expensive"
+          },
+          {
+            "kr": "비싼",
+            "rom": "BI-SSAN",
+            "en": "expensive (before noun)"
+          },
+          {
+            "kr": "많다",
+            "rom": "MAN-TA",
+            "en": "many / a lot (dictionary)"
+          },
+          {
+            "kr": "많아요",
+            "rom": "MAN-A-YO",
+            "en": "is a lot"
+          },
+          {
+            "kr": "많은",
+            "rom": "MAN-EUN",
+            "en": "many (before noun)"
           }
         ]
       },
@@ -1801,29 +1471,9 @@
         "name": "Useful Expressions",
         "cards": [
           {
-            "kr": "고 나서",
-            "rom": "GO NA-SEO",
-            "en": "after doing (sequential connector)"
-          },
-          {
-            "kr": "그",
-            "rom": "GEU",
-            "en": "that (near listener)"
-          },
-          {
-            "kr": "내일 만나요",
-            "rom": "NAE-IL MAN-NA-YO",
-            "en": "see you tomorrow"
-          },
-          {
-            "kr": "내일 봐요",
-            "rom": "NAE-IL BWA-YO",
-            "en": "see you tomorrow (casual)"
-          },
-          {
-            "kr": "무슨",
-            "rom": "MU-SEUN",
-            "en": "what kind of/which"
+            "kr": "어디에 가요?",
+            "rom": "EO-DI-E GA-YO?",
+            "en": "Where are you going?"
           },
           {
             "kr": "뭐 먹을 거예요?",
@@ -1836,64 +1486,14 @@
             "en": "What did you buy?"
           },
           {
-            "kr": "미국에서 왔어요",
-            "rom": "MI-GUG-E-SEO WA-SSEO-YO",
-            "en": "I came from America"
-          },
-          {
-            "kr": "아이고",
-            "rom": "A-I-GO",
-            "en": "exclamation of tiredness / pain"
-          },
-          {
-            "kr": "어디에 가요?",
-            "rom": "EO-DI-E GA-YO?",
-            "en": "Where are you going?"
-          },
-          {
-            "kr": "어떻게",
-            "rom": "EO-TTEO-KE",
-            "en": "how / in what way"
-          },
-          {
-            "kr": "어떻게 됐어요?",
-            "rom": "EO-TTEO-KE DWAESS-EO-YO",
-            "en": "How did it go? / What happened?"
-          },
-          {
-            "kr": "얼마",
-            "rom": "EOL-MA",
-            "en": "how much"
-          },
-          {
-            "kr": "예요",
-            "rom": "YE-YO",
-            "en": "is/am (after vowel)"
-          },
-          {
-            "kr": "이",
-            "rom": "I",
-            "en": "this (near speaker)"
-          },
-          {
             "kr": "이름이 뭐예요?",
             "rom": "I-REUM-I MWO-YE-YO?",
             "en": "What is your name?"
           },
           {
-            "kr": "이에요",
-            "rom": "I-E-YO",
-            "en": "is/am (polite casual)"
-          },
-          {
-            "kr": "입니다",
-            "rom": "IM-NI-DA",
-            "en": "is/am (formal)"
-          },
-          {
-            "kr": "집중하기 힘들어요",
-            "rom": "JIP-JUNG-HA-GI HIM-DEUL-EO-YO",
-            "en": "It is hard to concentrate"
+            "kr": "미국에서 왔어요",
+            "rom": "MI-GUG-E-SEO WA-SSEO-YO",
+            "en": "I came from America"
           },
           {
             "kr": "한국어 공부해요",
@@ -1916,11 +1516,6 @@
             "en": "Let's go together"
           },
           {
-            "kr": "뜨거운 우유를 마셔요",
-            "rom": "TTU-GO-UN U-YU-RUL MA-SHO-YO",
-            "en": "I drink hot milk"
-          },
-          {
             "kr": "매일",
             "rom": "MAE-IL",
             "en": "every day"
@@ -1934,201 +1529,11 @@
             "kr": "저는 ~ 좋아해요",
             "rom": "JO-NUN ~ JO-A-HAE-YO",
             "en": "I like ~"
-          }
-        ]
-      },
-      {
-        "name": "Adverbs",
-        "cards": [
-          {
-            "kr": "안",
-            "rom": "AN",
-            "en": "not (negation)"
           },
           {
-            "kr": "어디",
-            "rom": "EO-DI",
-            "en": "where"
-          },
-          {
-            "kr": "여기",
-            "rom": "YEO-GI",
-            "en": "here"
-          }
-        ]
-      },
-      {
-        "name": "Numbers",
-        "cards": [
-          {
-            "kr": "열여섯",
-            "rom": "YEOL-YEO-SEOT",
-            "en": "sixteen"
-          },
-          {
-            "kr": "하나",
-            "rom": "HA-NA",
-            "en": "one"
-          },
-          {
-            "kr": "한",
-            "rom": "HAN",
-            "en": "one (native Korean number)"
-          }
-        ]
-      },
-      {
-        "name": "Verbs",
-        "cards": [
-          {
-            "kr": "가다",
-            "rom": "GA-DA",
-            "en": "to go"
-          },
-          {
-            "kr": "공부하다",
-            "rom": "GONG-BU-HA-DA",
-            "en": "to study"
-          },
-          {
-            "kr": "기다리다",
-            "rom": "GI-DA-RI-DA",
-            "en": "to wait"
-          },
-          {
-            "kr": "끝나다",
-            "rom": "KKEUT-NA-DA",
-            "en": "to finish / to end"
-          },
-          {
-            "kr": "듣다",
-            "rom": "DEUT-DA",
-            "en": "to listen"
-          },
-          {
-            "kr": "마시다",
-            "rom": "MA-SI-DA",
-            "en": "to drink"
-          },
-          {
-            "kr": "만나다",
-            "rom": "MAN-NA-DA",
-            "en": "to meet"
-          },
-          {
-            "kr": "말하다",
-            "rom": "MAL-HA-DA",
-            "en": "to speak, to say"
-          },
-          {
-            "kr": "먹다",
-            "rom": "MEOK-DA",
-            "en": "to eat"
-          },
-          {
-            "kr": "받다",
-            "rom": "BAT-DA",
-            "en": "to receive"
-          },
-          {
-            "kr": "보내다",
-            "rom": "BO-NAE-DA",
-            "en": "to send"
-          },
-          {
-            "kr": "보다",
-            "rom": "BO-DA",
-            "en": "to see / to watch"
-          },
-          {
-            "kr": "보여주다",
-            "rom": "BO-YEO-JU-DA",
-            "en": "to show"
-          },
-          {
-            "kr": "사다",
-            "rom": "SA-DA",
-            "en": "to buy"
-          },
-          {
-            "kr": "싶다",
-            "rom": "SIP-DA",
-            "en": "to want"
-          },
-          {
-            "kr": "쓰다",
-            "rom": "SSEU-DA",
-            "en": "to write"
-          },
-          {
-            "kr": "씻다",
-            "rom": "SSIT-DA",
-            "en": "to wash"
-          },
-          {
-            "kr": "알다",
-            "rom": "AL-DA",
-            "en": "to know"
-          },
-          {
-            "kr": "오다",
-            "rom": "O-DA",
-            "en": "to come"
-          },
-          {
-            "kr": "읽다",
-            "rom": "ILK-DA",
-            "en": "to read"
-          },
-          {
-            "kr": "있다",
-            "rom": "IT-DA",
-            "en": "to exist / to have"
-          },
-          {
-            "kr": "잊다",
-            "rom": "IT-DA",
-            "en": "to forget"
-          },
-          {
-            "kr": "자다",
-            "rom": "JA-DA",
-            "en": "to sleep"
-          },
-          {
-            "kr": "좋아하다",
-            "rom": "JO-A-HA-DA",
-            "en": "to like"
-          },
-          {
-            "kr": "주다",
-            "rom": "JU-DA",
-            "en": "to give"
-          },
-          {
-            "kr": "주문하다",
-            "rom": "JU-MUN-HA-DA",
-            "en": "to order (food/service)"
-          },
-          {
-            "kr": "찾다",
-            "rom": "CHAJ-DA",
-            "en": "to look for/to find"
-          },
-          {
-            "kr": "포장하다",
-            "rom": "PO-JANG-HA-DA",
-            "en": "to pack / to wrap"
-          },
-          {
-            "kr": "필요하다",
-            "rom": "PIL-YO-HA-DA",
-            "en": "to need"
-          },
-          {
-            "kr": "하다",
-            "rom": "HA-DA",
-            "en": "to do"
+            "kr": "뜨거운 우유를 마셔요",
+            "rom": "TTU-GO-UN U-YU-RUL MA-SHO-YO",
+            "en": "I drink hot milk"
           }
         ]
       }

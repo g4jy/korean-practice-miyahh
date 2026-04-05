@@ -255,6 +255,78 @@ const App = (() => {
     URL.revokeObjectURL(url);
   }
 
+  /* --- Build Card Pool (shared across Browse/Learn/Quiz) --- */
+  async function buildCardPool() {
+    const data = await loadVocab();
+    const allCards = [];
+    const categories = new Map();
+    const seen = new Set();
+
+    function catLabel(cat) {
+      const map = {
+        food: 'Food & Drink', drink: 'Food & Drink', weather: 'Weather',
+        activity: 'Activities', person: 'People', thing: 'Objects'
+      };
+      return map[cat] || 'Other';
+    }
+
+    function addCard(kr, rom, en, category) {
+      if (!kr || seen.has(kr)) return;
+      seen.add(kr);
+      const card = { kr, rom: rom || '', en: en || '', category };
+      allCards.push(card);
+      if (!categories.has(category)) categories.set(category, []);
+      categories.get(category).push(card);
+    }
+
+    // Action data
+    const action = data.action || {};
+    (action.times || []).forEach(t => addCard(t.kr, t.rom, t.en, 'Time'));
+    (action.places || []).forEach(p => addCard(p.kr, p.rom, p.en, 'Places'));
+    (action.objects || []).forEach(o => addCard(o.kr, o.rom, o.en, catLabel(o.category)));
+    (action.verbs || []).forEach(v => {
+      addCard(v.present, v.presentRom, v.en + ' (present)', 'Verbs');
+      addCard(v.past, v.pastRom, v.pastEn + ' (past)', 'Verbs');
+      addCard(v.future, v.futureRom, v.futureEn + ' (future)', 'Verbs');
+    });
+
+    // Describe data
+    const desc = data.describe || {};
+    (desc.subjects || []).forEach(s => addCard(s.kr, s.rom, s.en, catLabel(s.category)));
+    (desc.adjectives || []).forEach(a => addCard(a.kr, a.rom, a.en, 'Adjectives'));
+    (desc.adverbs || []).forEach(a => addCard(a.kr, a.rom, a.en, 'Adverbs'));
+
+    // Flashcard categories
+    const fc = data.flashcards || {};
+    (fc.categories || []).forEach(cat => {
+      (cat.cards || []).forEach(c => addCard(c.kr, c.rom, c.en, cat.name));
+    });
+
+    // User-added words
+    if (typeof Storage !== 'undefined' && Storage.getUserWords) {
+      try {
+        const userWords = await Storage.getUserWords();
+        userWords.forEach(w => addCard(w.kr, w.rom, w.en, w.category || 'My Words'));
+      } catch (e) {}
+    }
+
+    return { allCards, categories };
+  }
+
+  /* --- Toast Notification --- */
+  function showToast(msg) {
+    let toast = document.getElementById('app-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'app-toast';
+      toast.className = 'app-toast';
+      document.body.appendChild(toast);
+    }
+    toast.textContent = msg;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 2500);
+  }
+
   /* --- Init --- */
   async function init() {
     if ('speechSynthesis' in window) {
@@ -288,6 +360,8 @@ const App = (() => {
     exportResponses,
     getWordMastery,
     getWeakWords,
-    flushBatch
+    flushBatch,
+    buildCardPool,
+    showToast
   };
 })();
