@@ -13,179 +13,57 @@
       <h1>Vocabulary Flashcards</h1>
     </header>
 
-    <!-- Mode Tabs -->
-    <div class="mode-tabs" id="mode-tabs">
-      <button class="mode-tab active" data-mode="browse">Browse</button>
-      <button class="mode-tab" data-mode="learn">Learn</button>
-      <button class="mode-tab" data-mode="quiz">Quiz</button>
+    <p class="instruction">Tap the card to flip. Swipe or use arrows to navigate.</p>
+
+    <div class="category-tabs" id="category-tabs"></div>
+
+    <div class="review-banner hidden" id="review-banner">
+      <span>Reviewing weak words</span>
+      <button class="review-exit-btn" id="review-exit-btn">Show All</button>
     </div>
 
-    <!-- ==================== BROWSE PANE (existing) ==================== -->
-    <div class="mode-pane active" id="pane-browse">
-      <p class="instruction">Tap the card to flip. Swipe or use arrows to navigate.</p>
+    <div class="mastery-stats" id="mastery-stats"></div>
 
-      <div class="category-tabs" id="category-tabs"></div>
-
-      <div class="review-banner hidden" id="review-banner">
-        <span>Reviewing weak words</span>
-        <button class="review-exit-btn" id="review-exit-btn">Show All</button>
-      </div>
-
-      <div class="mastery-stats" id="mastery-stats"></div>
-
-      <div class="flashcard-area">
-        <div class="flashcard" id="flashcard">
-          <div class="flashcard-inner" id="flashcard-inner">
-            <div class="flashcard-front">
-              <span class="card-korean" id="card-korean"></span>
-              <button class="tts-btn" id="card-tts" title="Listen">&#128266;</button>
-            </div>
-            <div class="flashcard-back">
-              <span class="card-english" id="card-english"></span>
-              <span class="card-romanization" id="card-romanization"></span>
-            </div>
+    <div class="flashcard-area">
+      <div class="flashcard" id="flashcard">
+        <div class="flashcard-inner" id="flashcard-inner">
+          <div class="flashcard-front">
+            <span class="card-korean" id="card-korean"></span>
+            <button class="tts-btn" id="card-tts" title="Listen">🔊</button>
+          </div>
+          <div class="flashcard-back">
+            <span class="card-english" id="card-english"></span>
+            <span class="card-romanization" id="card-romanization"></span>
           </div>
         </div>
       </div>
-
-      <div class="flashcard-controls">
-        <button class="fc-btn" id="prev-btn">&larr;</button>
-        <span class="fc-progress" id="progress">1 / 10</span>
-        <button class="fc-btn" id="next-btn">&rarr;</button>
-      </div>
-
-      <div class="response-buttons" id="response-buttons">
-        <button class="resp-btn resp-know" data-resp="know" title="Press 1">Know</button>
-        <button class="resp-btn resp-unsure" data-resp="unsure" title="Press 2">Unsure</button>
-        <button class="resp-btn resp-dont-know" data-resp="dont_know" title="Press 3">Don't Know</button>
-      </div>
-
-      <div class="flashcard-actions">
-        <button class="fc-action-btn" id="shuffle-btn">Shuffle</button>
-        <button class="fc-action-btn" id="direction-btn">EN &rarr; KR</button>
-        <button class="fc-action-btn" id="review-weak-btn">Review Weak (0)</button>
-        <button class="fc-action-btn" id="export-btn">Export</button>
-      </div>
-
-      <div class="rom-toggle">
-        <button class="btn-rom active" id="toggle-rom">Aa Hide Romanization</button>
-      </div>
     </div>
 
-    <!-- ==================== LEARN PANE ==================== -->
-    <div class="mode-pane" id="pane-learn">
-      <div class="srs-ctrl" id="learn-cat-ctrl">
-        <span class="srs-label">Category</span>
-        <div class="pill-row" id="learn-cat-pills"></div>
-      </div>
-      <div class="srs-ctrl">
-        <span class="srs-label">Words</span>
-        <div class="pill-row" id="learn-size-pills">
-          <button class="pill" data-n="10">10</button>
-          <button class="pill active" data-n="25">25</button>
-          <button class="pill" data-n="50">50</button>
-          <button class="pill" data-n="0">All</button>
-        </div>
-      </div>
-
-      <div class="srs-boxes" id="srs-boxes">
-        <div class="srs-box"><b id="b0">0</b><span>New</span></div>
-        <div class="srs-box"><b id="b1">0</b><span>Again</span></div>
-        <div class="srs-box"><b id="b2">0</b><span>1d</span></div>
-        <div class="srs-box"><b id="b3">0</b><span>3d</span></div>
-        <div class="srs-box"><b id="b4">0</b><span>7d</span></div>
-        <div class="srs-box done"><b id="b5">0</b><span>Done</span></div>
-      </div>
-
-      <div class="srs-progress-bar">
-        <div class="srs-bar"><div class="srs-fill" id="learn-bar"></div></div>
-        <span class="srs-pct" id="learn-pct">0%</span>
-      </div>
-
-      <button class="go-btn" id="go-learn">Start Learning</button>
-
-      <div class="srs-data-row">
-        <button class="srs-data-btn" id="srs-export">Export</button>
-        <button class="srs-data-btn" id="srs-import">Import</button>
-        <button class="srs-data-btn" id="srs-reset">Reset</button>
-      </div>
-      <input type="file" id="srs-file-input" accept=".json" style="display:none">
+    <div class="flashcard-controls">
+      <button class="fc-btn" id="prev-btn">&larr;</button>
+      <span class="fc-progress" id="progress">1 / 10</span>
+      <button class="fc-btn" id="next-btn">&rarr;</button>
     </div>
 
-    <!-- ==================== QUIZ PANE ==================== -->
-    <div class="mode-pane" id="pane-quiz">
-      <div class="srs-ctrl" id="quiz-cat-ctrl">
-        <span class="srs-label">Category</span>
-        <div class="pill-row" id="quiz-cat-pills"></div>
-      </div>
-      <div class="srs-ctrl">
-        <span class="srs-label">Words</span>
-        <div class="pill-row" id="quiz-size-pills">
-          <button class="pill" data-n="10">10</button>
-          <button class="pill active" data-n="25">25</button>
-          <button class="pill" data-n="50">50</button>
-          <button class="pill" data-n="0">All</button>
-        </div>
-      </div>
-
-      <div class="srs-progress-bar">
-        <div class="srs-bar"><div class="srs-fill quiz-fill" id="quiz-bar"></div></div>
-        <span class="srs-pct" id="quiz-pct">0%</span>
-      </div>
-
-      <button class="go-btn go-quiz" id="go-quiz">Start Quiz</button>
+    <div class="response-buttons" id="response-buttons">
+      <button class="resp-btn resp-know" data-resp="know" title="Press 1">Know</button>
+      <button class="resp-btn resp-unsure" data-resp="unsure" title="Press 2">Unsure</button>
+      <button class="resp-btn resp-dont-know" data-resp="dont_know" title="Press 3">Don't Know</button>
     </div>
 
-    <!-- ==================== LEARN STUDY OVERLAY ==================== -->
-    <div class="study-overlay hidden" id="study-learn">
-      <div class="study-header">
-        <button class="study-back" id="learn-back">&larr;</button>
-        <span class="study-pg"><b id="lc">1</b> / <span id="lt">25</span></span>
-      </div>
-      <div class="study-card-area">
-        <div class="study-card" id="learn-card">
-          <div class="study-cat" id="learn-cat-label"></div>
-          <div class="study-kr" id="learn-kr"></div>
-          <div class="study-reveal" id="learn-reveal">
-            <div class="study-line"></div>
-            <div class="study-en" id="learn-en"></div>
-            <div class="study-rom" id="learn-rom"></div>
-          </div>
-          <div class="study-hint" id="learn-hint">tap to reveal</div>
-          <div class="swipe-overlay sw-got" id="sw-got">Got it</div>
-          <div class="swipe-overlay sw-again" id="sw-again">Again</div>
-        </div>
-      </div>
-      <div class="study-actions hidden" id="learn-actions">
-        <button class="study-btn btn-again" id="btn-again">&larr; Again</button>
-        <button class="study-btn btn-got-it" id="btn-got-it">Got it &rarr;</button>
-      </div>
+    <div class="flashcard-actions">
+      <button class="fc-action-btn" id="shuffle-btn">Shuffle</button>
+      <button class="fc-action-btn" id="direction-btn">EN &rarr; KR</button>
+      <button class="fc-action-btn" id="review-weak-btn">Review Weak (0)</button>
+      <button class="fc-action-btn" id="export-btn">Export</button>
     </div>
 
-    <!-- ==================== QUIZ STUDY OVERLAY ==================== -->
-    <div class="study-overlay hidden" id="study-quiz">
-      <div class="study-header">
-        <button class="study-back" id="quiz-back">&larr;</button>
-        <span class="study-pg"><b id="rc">1</b> / <span id="rtt">25</span></span>
-      </div>
-      <div class="quiz-prompt">
-        <div class="quiz-label">What is</div>
-        <div class="quiz-word" id="quiz-word"></div>
-      </div>
-      <div class="quiz-grid" id="quiz-grid"></div>
-      <div class="quiz-score">Score: <b id="quiz-sc">0</b> / <b id="quiz-tot">0</b></div>
+    <div class="rom-toggle">
+      <button class="btn-rom active" id="toggle-rom">Aa Hide Romanization</button>
     </div>
 
-    <!-- ==================== DONE SCREEN ==================== -->
-    <div class="done-screen hidden" id="done-screen">
-      <div class="done-icon" id="done-icon"></div>
-      <h2 class="done-title" id="done-title"></h2>
-      <p class="done-desc" id="done-desc"></p>
-      <button class="go-btn" id="done-again">Again</button>
-      <button class="go-btn go-secondary" id="done-home">Back</button>
-    </div>
-
-    <!-- ==================== ADD WORD MODAL ==================== -->
+    <!-- Add Word FAB + Modal (new feature) -->
+    <button class="add-word-fab" id="add-word-fab" title="Add New Word">+</button>
     <div class="modal-overlay hidden" id="add-word-modal">
       <div class="modal-card">
         <div class="modal-header">
@@ -219,21 +97,19 @@
               <option value="Time">Time</option>
             </select>
           </div>
-          <button type="submit" class="go-btn">Add Word</button>
+          <button type="submit" class="add-word-submit">Add Word</button>
         </form>
         <div class="user-words-list" id="user-words-list"></div>
         <div class="modal-footer">
-          <button class="srs-data-btn" id="export-user-words">Export My Words</button>
+          <button class="fc-action-btn" id="export-user-words">Export My Words</button>
         </div>
       </div>
     </div>
-
-    <!-- Add Word FAB -->
-    <button class="add-word-fab" id="add-word-fab" title="Add New Word">+</button>
   </div>
 
   <script src="js/storage.js"></script>
   <script src="js/common.js"></script>
   <script src="js/flashcard.js"></script>
+  <script src="js/add-word.js"></script>
 </body>
 </html>
