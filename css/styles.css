@@ -823,13 +823,20 @@ body.hide-en .translation { display: none !important; }
 .word-row { display:flex; align-items:center; justify-content:space-between; padding:10px 14px; border-bottom:1px solid #f5f5f5; }
 .word-row:last-child { border-bottom:none; }
 .word-info { display:flex; flex-direction:column; min-width:0; flex:1; }
+.word-top { display:flex; align-items:center; gap:6px; margin-bottom:2px; }
 .word-kr { font-size:1rem; font-weight:700; color:#333; }
 .word-en { font-size:.78rem; color:#999; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-.word-toggle { padding:5px 12px; border-radius:14px; font-size:.72rem; font-weight:600; cursor:pointer; border:1px solid #ddd; background:#fff; color:#E17055; min-width:50px; transition:all .15s; }
+.word-rom { font-size:.65rem; color:#bbb; }
+.hide-rom .rom-text { display:none; }
+.word-cat-badge { font-size:.55rem; padding:2px 6px; border-radius:8px; background:#f0eef5; color:#888; white-space:nowrap; }
+.word-toggle { padding:5px 12px; border-radius:14px; font-size:.85rem; font-weight:600; cursor:pointer; border:1px solid #ddd; background:#fff; color:#E17055; min-width:36px; transition:all .15s; text-align:center; }
 .word-toggle.known { background:#e0f8f2; color:#00B894; border-color:#b8e8d9; }
 .word-empty { text-align:center; color:#aaa; padding:30px; font-size:.9rem; }
 
-.practice-info { text-align:center; color:#888; font-size:.95rem; margin-bottom:12px; }
+.cat-filter-row { display:flex; gap:4px; margin-bottom:10px; flex-wrap:wrap; }
+.cat-filter-row .filter-btn { font-size:.68rem; padding:4px 10px; }
+
+.practice-info { text-align:center; color:#888; font-size:.95rem; margin-bottom:12px; line-height:1.5; }
 
 @media (max-width: 500px) {
   .srs-boxes { grid-template-columns:repeat(3,1fr); }

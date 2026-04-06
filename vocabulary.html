@@ -13,13 +13,11 @@
       <h1>My Vocabulary</h1>
     </header>
 
-    <!-- Stats -->
     <div class="vocab-stats" id="vocab-stats"></div>
 
-    <!-- Tabs -->
     <div class="vocab-tabs" id="vocab-tabs">
       <button class="vocab-tab active" data-tab="words">Words</button>
-      <button class="vocab-tab" data-tab="practice">Practice</button>
+      <button class="vocab-tab" data-tab="practice">Sort</button>
       <button class="vocab-tab" data-tab="quiz">Quiz</button>
     </div>
 
@@ -30,20 +28,36 @@
         <button class="filter-btn" data-f="dont-know">Don't Know</button>
         <button class="filter-btn" data-f="know">Know</button>
       </div>
+      <div class="cat-filter-row" id="cat-filter"></div>
       <div class="vocab-search">
         <input type="text" id="search-input" placeholder="Search words...">
       </div>
       <div class="word-list" id="word-list"></div>
+      <div class="rom-toggle">
+        <button class="btn-rom active" id="toggle-rom">Aa Hide Romanization</button>
+      </div>
     </div>
 
-    <!-- ===== PRACTICE TAB ===== -->
+    <!-- ===== PRACTICE (SORT) TAB ===== -->
     <div class="vocab-pane" id="pane-practice">
       <p class="practice-info" id="practice-info"></p>
-      <button class="go-btn" id="go-practice">Start Practice</button>
+      <button class="go-btn" id="go-practice">Sort Words</button>
     </div>
 
     <!-- ===== QUIZ TAB ===== -->
     <div class="vocab-pane" id="pane-quiz">
+      <div class="srs-ctrl">
+        <span class="srs-label">Status</span>
+        <div class="pill-row" id="quiz-filter">
+          <button class="pill active" data-f="all">All</button>
+          <button class="pill" data-f="dont-know">Don't Know</button>
+          <button class="pill" data-f="know">Know</button>
+        </div>
+      </div>
+      <div class="srs-ctrl">
+        <span class="srs-label">Category</span>
+        <div class="pill-row" id="quiz-cat"></div>
+      </div>
       <div class="srs-ctrl">
         <span class="srs-label">Questions</span>
         <div class="pill-row" id="quiz-size">
@@ -69,14 +83,14 @@
           <div class="study-reveal">
             <div class="study-line"></div>
             <div class="study-en" id="p-en"></div>
-            <div class="study-rom" id="p-rom"></div>
+            <div class="study-rom rom-text" id="p-rom"></div>
           </div>
           <div class="study-hint">tap to reveal</div>
         </div>
       </div>
       <div class="study-actions hidden" id="practice-actions">
-        <button class="study-btn btn-again" id="btn-still">Still Learning</button>
-        <button class="study-btn btn-got-it" id="btn-know">I Know This!</button>
+        <button class="study-btn btn-again" id="btn-dont">Don't Know ✗</button>
+        <button class="study-btn btn-got-it" id="btn-know">Know ✓</button>
       </div>
     </div>
 
