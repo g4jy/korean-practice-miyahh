@@ -171,21 +171,20 @@
     });
   }
 
-  // ========== PRACTICE (Sort your words) ==========
-  let PQ = [], PI = 0, POPEN = false, pKnow = 0, pDont = 0;
+  // ========== STUDY (only Don't Know words) ==========
+  let PQ = [], PI = 0, POPEN = false, pKnow = 0;
 
   function updatePracticeInfo() {
-    const total = allCards.length;
     const dk = allCards.filter(c => !isKnown(c.kr)).length;
-    $('practice-info').innerHTML = 'Go through your words and sort them.<br><b>' + dk + '</b> Don\'t Know · <b>' + (total - dk) + '</b> Know';
-    $('go-practice').textContent = 'Sort Words (' + total + ')';
-    $('go-practice').disabled = total === 0;
+    $('practice-info').innerHTML = 'Study your unknown words. Mark ones you now know.<br><b>' + dk + '</b> words to study';
+    $('go-practice').textContent = 'Study Don\'t Know (' + dk + ')';
+    $('go-practice').disabled = dk === 0;
   }
 
   $('go-practice').addEventListener('click', () => {
-    PQ = [...allCards];
+    PQ = allCards.filter(c => !isKnown(c.kr));
     for (let i = PQ.length - 1; i > 0; i--) { const j = Math.random()*i|0; [PQ[i],PQ[j]]=[PQ[j],PQ[i]]; }
-    PI = 0; POPEN = false; pKnow = 0; pDont = 0;
+    PI = 0; POPEN = false; pKnow = 0;
     $('practice-screen').classList.remove('hidden');
     showPracticeCard();
   });
@@ -196,9 +195,9 @@
     if (PI >= PQ.length) {
       $('practice-screen').classList.add('hidden');
       $('done-screen').classList.remove('hidden');
-      $('done-icon').textContent = '\uD83D\uDCCB';
-      $('done-title').textContent = 'Sorting Done!';
-      $('done-desc').textContent = '✓ ' + pKnow + ' Know · ✗ ' + pDont + ' Don\'t Know';
+      $('done-icon').textContent = '\uD83D\uDCAA';
+      $('done-title').textContent = 'Study Done!';
+      $('done-desc').textContent = pKnow + ' words moved to Know';
       return;
     }
     POPEN = false;
@@ -222,12 +221,9 @@
     $('practice-actions').classList.remove('hidden');
   });
 
-  $('btn-dont').addEventListener('click', async () => {
-    const w = PQ[PI];
-    M[w.kr] = { ...(M[w.kr] || {}), known: false };
-    await Storage.saveMastery(M);
-    pDont++; PI++; showPracticeCard();
-  });
+  // "Still don't know" → keep as-is, move to next
+  $('btn-dont').addEventListener('click', () => { PI++; showPracticeCard(); });
+  // "Know now" → promote to Know
   $('btn-know').addEventListener('click', async () => {
     const w = PQ[PI];
     M[w.kr] = { ...(M[w.kr] || {}), known: true };
